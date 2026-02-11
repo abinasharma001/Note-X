@@ -1,0 +1,20 @@
+:root { font-family: Inter, system-ui, sans-serif; }
+body { margin: 0; background: #f3f4f6; color: #111827; }
+.layout { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+.layout.dark { background: #0f172a; color: #f8fafc; min-height: 100vh; }
+.panel { background: #fff; border-radius: 12px; padding: 1rem; margin-bottom: 1rem; }
+.dark .panel { background: #1e293b; }
+.auth-card { max-width: 420px; margin: 10vh auto; background: #fff; padding: 1.25rem; border-radius: 12px; }
+form { display: grid; gap: .6rem; }
+input, textarea, select, button { padding: .6rem; border-radius: 8px; border: 1px solid #d1d5db; }
+button { cursor: pointer; }
+.error { color: #dc2626; }
+.note-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: .8rem; }
+.note-card { padding: .75rem; border-radius: 12px; box-shadow: 0 1px 3px rgba(0,0,0,.15); }
+.actions, .inline, .toolbar, .theme-row { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+.task-row { display: flex; gap: .4rem; align-items: center; }
+.bin-row { display: flex; justify-content: space-between; gap: .5rem; padding: .5rem 0; border-bottom: 1px solid #e5e7eb; }
+.text-btn { border: none; background: transparent; color: #2563eb; }
+.toast-wrapper { position: fixed; right: 1rem; bottom: 1rem; display: grid; gap: .5rem; }
+.toast { background: #111827; color: #fff; padding: .75rem; border-radius: 8px; width: 280px; }
+@media (max-width: 700px) { .layout { padding: .6rem; } .panel { padding: .8rem; } }
